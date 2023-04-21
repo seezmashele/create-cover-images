@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.album_image_shadow {
+  box-shadow: 1px 3px 24px -10px #000;
+}
