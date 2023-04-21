@@ -7,22 +7,17 @@
 }
 
 @font-face {
-  font-family: PoppinsBold;
-  src: url("fonts/Poppins-Bold.ttf");
-}
-
-@font-face {
   font-family: PoppinsExtraBold;
-  src: url("fonts/Poppins-ExtraBold.ttf");
+  src: url("./localfonts/Poppins-ExtraBold.ttf");
 }
 
 .poppins {
-  font-family: PoppinsExtraBold;
+  font-family: PoppinsExtraBold, sans-serif;
 }
 
 .hit-the-floor {
   color: #fff;
-  text-shadow: 0 1px 0 #888, 0 2px 0 #222, 0 3px 0 #888,
+  text-shadow: 0 1px 0 #888, 0 2px 0 #111, 0 3px 0 #777,
     0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
     0 1px 50px rgba(0, 0, 0, 0.7), 0 3px 0px rgba(0, 0, 0, 0.2),
     0 5px 15px rgba(0, 0, 0, 0.5), 0 10px 10px rgba(0, 0, 0, 0.2),
