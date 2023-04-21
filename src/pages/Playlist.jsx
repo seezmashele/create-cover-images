@@ -8,6 +8,8 @@ import { pageButtons } from "../shared/pageButtons"
 
 function Home() {
   const [uploadedImage, setUploadedImage] = useState(null)
+  const [playlistNumber, setPlaylistNumber] = useState(1)
+  const [genreName, setGenreName] = useState("Amapiano")
   const [imageDownloadName, setImageDownloadName] = useState("")
   const selectedPageIndex = 1
 
@@ -79,6 +81,25 @@ function Home() {
       </div>
 
       <div className="w-full mt-6 flex justify-center items-center space-x-3">
+        <p>Playlist no. </p>
+        <input
+          required
+          type="number"
+          value={playlistNumber}
+          onChange={e => setPlaylistNumber(e.target.value)}
+          className="border w-32 rounded p-2 border-neutral-400"
+        />
+        <p>Genre: </p>
+        <input
+          required
+          type="text"
+          value={genreName}
+          onChange={e => setGenreName(e.target.value)}
+          className="border w-32 rounded p-2 border-neutral-400"
+        />
+      </div>
+
+      <div className="w-full mt-6 flex justify-center items-center space-x-3">
         <p>Filename: </p>
         <input
           required
@@ -108,11 +129,11 @@ function Home() {
               Playlist
             </div>
             <div className="hit-the-floor poppins mt-3 drop-shadow-sm text-center text-8xl font-bold tracking-widest uppercase text-white">
-              #5
+              #{playlistNumber}
             </div>
           </div>
           <div className="hit-the-floor poppins text-4xl font-bold tracking-[1rem] uppercase text-white drop-shadow ">
-            deep house
+            {genreName}
           </div>
           <input {...getInputProps()} />
         </div>
