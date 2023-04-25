@@ -8,6 +8,7 @@ import { pageButtons } from "../shared/pageButtons"
 
 function Home() {
   const [uploadedImage, setUploadedImage] = useState(null)
+  const [artistName, setArtistName] = useState("Black Coffee")
   const [imageDownloadName, setImageDownloadName] = useState("")
   const selectedPageIndex = 2
 
@@ -42,9 +43,8 @@ function Home() {
       <div className="h-16 border-bF border-neutral-500 flex items-center justify-center space-x-2">
         {pageButtons.map((item, index) => {
           return (
-            <Link to={item.path}>
+            <Link to={item.path} key={"tab" + index}>
               <div
-                key={"tab" + index}
                 className={`w-24 select-none border-2 py-2 hover:bg-neutral-200 bg-neutral-100 font-semiboldf rounded cursor-pointer text-center ${
                   index === selectedPageIndex
                     ? "border-blue-400"
@@ -80,6 +80,17 @@ function Home() {
       </div>
 
       <div className="w-full mt-6 flex justify-center items-center space-x-3">
+        <p>Artist: </p>
+        <input
+          required
+          type="text"
+          value={artistName}
+          onChange={e => setArtistName(e.target.value)}
+          className="border rounded p-2 border-neutral-400"
+        />
+      </div>
+
+      <div className="w-full mt-6 flex justify-center items-center space-x-3">
         <p>Filename: </p>
         <input
           required
@@ -100,16 +111,17 @@ function Home() {
       <div className="w-full mt-6 flex justify-center">
         <div
           {...getRootProps()}
+          style={{ backgroundImage: `url(${uploadedImage})` }}
           id="custom-image-container"
-          className="cursor-pointer w-[520px] h-[390px] overflow-hidden bg-neutral-100 flex items-center justify-center"
+          className="cursor-pointer bg-top bg-cover  w-[520px] h-[390px] flex-col overflow-hidden flex items-center justify-end"
         >
-          <div className="w-[365px] h-[365px] shadow-2xlF album_image_shadow rounded-md overflow-hidden">
-            <img
-              draggable="false"
-              className="w-full h-full object-cover object-top"
-              src={uploadedImage ? uploadedImage : null}
-              alt=""
-            />
+          <div className="h-20 bg-slate-600F mt-16">
+            <div className="poppins spotlight_title text-5xl drop-shadow-sm text-center font-bold tracking-widest uppercase text-white">
+              {artistName}
+            </div>
+          </div>
+          <div className="bg-black rounded-t py-3.5 px-8 poppins text-2xl font-bold tracking-[.5rem] uppercase text-white drop-shadow ">
+            Spotlight
           </div>
           <input {...getInputProps()} />
         </div>
