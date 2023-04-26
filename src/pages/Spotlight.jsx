@@ -115,8 +115,8 @@ function Home() {
           id="custom-image-container"
           className="cursor-pointer bg-top bg-cover  w-[520px] h-[390px] flex-col overflow-hidden flex items-center justify-end"
         >
-          <div className="h-24">
-            <div className="poppins spotlight_title text-5xl drop-shadow-sm text-center font-bold tracking-widest uppercase text-white">
+          <div className="h-24F mb-12 px-5">
+            <div className="poppins spotlight_title text-5xl leading-tight drop-shadow-sm text-center font-bold tracking-widest uppercase text-white">
               {artistName}
             </div>
           </div>
