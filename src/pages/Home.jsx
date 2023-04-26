@@ -119,15 +119,17 @@ function Home() {
         <div
           {...getRootProps()}
           id="custom-image-container"
-          className="cursor-pointer w-[520px] h-[390px] overflow-hidden bg-neutral-100 flex items-center justify-center"
+          className="cursor-pointer w-[520px] h-[390px] overflow-hidden bg-opacity-10 bg-neutral-100 flex items-center justify-center"
         >
-          <div className="w-[365px] h-[365px] shadow-2xlF album_image_shadow rounded-md overflow-hidden">
-            <img
-              draggable="false"
-              className="w-full h-full object-cover object-top"
-              src={uploadedImage ? uploadedImage : null}
-              alt=""
-            />
+          <div className="w-full h-full flex items-center justify-center bg-neutral-100 bg-opacity-30">
+            <div className="w-[360px] h-[360px] album_image_shadow rounded-md overflow-hidden">
+              <img
+                draggable="false"
+                className="w-full h-full object-cover object-top"
+                src={uploadedImage ? uploadedImage : null}
+                alt=""
+              />
+            </div>
           </div>
           <input {...getInputProps()} />
         </div>
