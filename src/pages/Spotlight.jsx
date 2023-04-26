@@ -8,7 +8,7 @@ import { pageButtons } from "../shared/pageButtons"
 
 function Home() {
   const [uploadedImage, setUploadedImage] = useState(null)
-  const [artistName, setArtistName] = useState("Black Coffee")
+  const [artistName, setArtistName] = useState("Name")
   const [imageDownloadName, setImageDownloadName] = useState("")
   const selectedPageIndex = 2
 
@@ -115,7 +115,7 @@ function Home() {
           id="custom-image-container"
           className="cursor-pointer bg-top bg-cover  w-[520px] h-[390px] flex-col overflow-hidden flex items-center justify-end"
         >
-          <div className="h-20 bg-slate-600F mt-16">
+          <div className="h-24">
             <div className="poppins spotlight_title text-5xl drop-shadow-sm text-center font-bold tracking-widest uppercase text-white">
               {artistName}
             </div>
