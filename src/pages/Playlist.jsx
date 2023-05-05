@@ -122,17 +122,17 @@ function Home() {
           {...getRootProps()}
           style={{ backgroundImage: `url(${uploadedImage})` }}
           id="custom-image-container"
-          className="cursor-pointer bg-center bg-cover  w-[520px] h-[390px] flex-col overflow-hidden flex items-center"
+          className="cursor-pointer bg-center bg-cover  w-[520px] h-[390px] flex-shrink-0 flex-col overflow-hidden flex items-center"
         >
           <div className="h-56 bg-slate-600F mt-16">
-            <div className="poppins hit-the-floor text-6xl drop-shadow-sm text-center font-bold tracking-widest uppercase text-white">
+            <div className="poppins playlist_title text-6xl drop-shadow-sm text-center font-bold tracking-widest uppercase text-white">
               Playlist
             </div>
-            <div className="hit-the-floor poppins mt-3 drop-shadow-sm text-center text-8xl font-bold tracking-widest uppercase text-white">
+            <div className="playlist_title poppins mt-3 drop-shadow-sm text-center text-8xl font-bold tracking-widest uppercase text-white">
               #{playlistNumber}
             </div>
           </div>
-          <div className="hit-the-floor poppins text-4xl font-bold tracking-[1rem] uppercase text-white drop-shadow ">
+          <div className="playlist_title poppins text-4xl font-bold tracking-[1rem] uppercase text-white drop-shadow ">
             {genreName}
           </div>
           <input {...getInputProps()} />

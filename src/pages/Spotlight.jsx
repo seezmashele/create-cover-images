@@ -113,7 +113,7 @@ function Home() {
           {...getRootProps()}
           style={{ backgroundImage: `url(${uploadedImage})` }}
           id="custom-image-container"
-          className="cursor-pointer bg-top bg-cover  w-[520px] h-[390px] flex-col overflow-hidden flex items-center justify-end"
+          className="cursor-pointer bg-top bg-cover  w-[520px] h-[390px] flex-col flex-shrink-0 overflow-hidden flex items-center justify-end"
         >
           <div className="h-24F mb-12 px-5">
             <div className="poppins spotlight_title text-5xl leading-tight drop-shadow-sm text-center font-bold tracking-widest uppercase text-white">
