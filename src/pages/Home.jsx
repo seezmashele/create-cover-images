@@ -123,8 +123,8 @@ function Home() {
         >
           <div className="w-full h-full flex items-center justify-center bg-neutral-100 bg-opacity-30">
             <div
-              className="w-[360px] h-[360px]
-             flex-shrink-0 album_image_shadow rounded-md overflow-hidden"
+              className="w-[390px] h-[390px]
+             flex-shrink-0 overflow-hidden"
             >
               <img
                 draggable="false"

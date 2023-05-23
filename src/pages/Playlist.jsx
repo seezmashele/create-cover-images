@@ -122,9 +122,9 @@ function Home() {
           {...getRootProps()}
           style={{ backgroundImage: `url(${uploadedImage})` }}
           id="custom-image-container"
-          className="cursor-pointer bg-center bg-cover  w-[520px] h-[390px] flex-shrink-0 flex-col overflow-hidden flex items-center"
+          className="cursor-pointer bg-center bg-cover w-[520px] h-[390px] flex-shrink-0 flex-col overflow-hidden flex items-center"
         >
-          <div className="h-56 bg-slate-600F mt-16">
+          <div className="h-56 mt-16">
             <div className="poppins playlist_title text-6xl drop-shadow-sm text-center font-bold tracking-widest uppercase text-white">
               Playlist
             </div>
