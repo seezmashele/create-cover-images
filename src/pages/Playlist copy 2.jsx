@@ -8,9 +8,10 @@ import { pageButtons } from "../shared/pageButtons"
 
 function Home() {
   const [uploadedImage, setUploadedImage] = useState(null)
-  const [artistName, setArtistName] = useState("Name")
+  const [playlistNumber, setPlaylistNumber] = useState(1)
+  const [genreName, setGenreName] = useState("Amapiano")
   const [imageDownloadName, setImageDownloadName] = useState("")
-  const selectedPageIndex = 2
+  const selectedPageIndex = 1
 
   const onDrop = useCallback(acceptedFiles => {
     if (acceptedFiles && acceptedFiles[0]) {
@@ -80,13 +81,21 @@ function Home() {
       </div>
 
       <div className="w-full mt-6 flex justify-center items-center space-x-3">
-        <p>Artist: </p>
+        <p>Playlist no. </p>
+        <input
+          required
+          type="number"
+          value={playlistNumber}
+          onChange={e => setPlaylistNumber(e.target.value)}
+          className="border w-32 rounded p-2 border-neutral-400"
+        />
+        <p>Genre: </p>
         <input
           required
           type="text"
-          value={artistName}
-          onChange={e => setArtistName(e.target.value)}
-          className="border rounded p-2 border-neutral-400"
+          value={genreName}
+          onChange={e => setGenreName(e.target.value)}
+          className="border w-32 rounded p-2 border-neutral-400"
         />
       </div>
 
@@ -113,41 +122,41 @@ function Home() {
           {...getRootProps()}
           style={{ backgroundImage: `url(${uploadedImage})` }}
           id="custom-image-container"
-          className="cursor-pointer bg-top bg-cover w-[480px] h-[360px] flex-col flex-shrink-0 overflow-hidden flex items-center justify-end"
+          className="cursor-pointer bg-center bg-cover w-[520px] h-[390px] flex-shrink-0 flex-col overflow-hidden flex items-center"
         >
-          <div className="h-60 flex justify-end items-end px-5">
-            <div className="uppercase poppins title_stroke poppins_boldF poppins  text-5xlf text-[2.75rem] spotlight_titlef ml-2f leading-tight text-center tracking-widest">
-              {artistName}
+          <div className="h-56 title_stroke mt-16 ml-2 w-full">
+            <div className="poppins w-full text-6xl drop-shadow-sm text-center font-bold tracking-widest uppercase">
+              Playlist
+            </div>
+            <div className="poppins mt-3 text-center text-8xl font-bold tracking-widest uppercase">
+              #{playlistNumber}
             </div>
           </div>
-          <div className="h-60 -mt-[15.3rem] flex justify-end items-end  px-5">
-            <div className="uppercase poppins ml-3F title_stroke poppins_boldF poppins  text-5xlf text-[2.75rem] spotlight_titlef ml-2f leading-tight text-center tracking-widest">
-              {artistName}
+          <div className="h-56 title_stroke -mt-[14.3rem] w-full">
+            <div className="poppins w-full playlist_title text-6xl drop-shadow-sm text-center font-bold tracking-widest uppercase">
+              Playlist
+            </div>
+            <div className="playlist_title title_strokeF poppins mt-3 drop-shadow-sm text-center text-8xl font-bold tracking-widest uppercase">
+              #{playlistNumber}
             </div>
           </div>
-          <div className="h-60 flex justify-end items-end -mt-60 px-5 -translate-y-fullF">
-            <div className="uppercase  poppins_boldF poppins text-[2.75rem] leading-tight text-center tracking-widest text-white">
-              {artistName}
+          <div className="h-56 -mt-56 w-full z-40">
+            <div className="poppins w-full text-6xl text-center font-bold tracking-widest uppercase text-white">
+              Playlist
+            </div>
+            <div className="poppins mt-3 text-center text-8xl font-bold tracking-widest uppercase text-white">
+              #{playlistNumber}
             </div>
           </div>
-          <div className="mt-5 mb-5 bg-black rounded-t-sm w-fullF text-center py-2 pr-3 poppins_bold text-xl font-boldF tracking-[.5rem] pl-5 uppercase text-white ">
-            Spotlight
+          <div className="playlist_title title_stroke poppins text-4xl font-bold tracking-[1rem] ml-1.5 uppercase">
+            {genreName}
           </div>
-          {/* <div className="mt-6">
-            <div className="poppins title_stroke poppins  text-3xl text-[2.25rem]F spotlight_titlef ml-2f leading-tight uppercase text-center tracking-[.5rem]">
-              Spotlight
-            </div>
+          <div className="title_stroke -mt-[2.75rem] ml poppins text-4xl font-bold tracking-[1rem] uppercase text-white drop-shadow ">
+            {genreName}
           </div>
-          <div className="-mt-[2.45rem]">
-            <div className="poppins title_stroke poppins  text-3xl text-[2.25rem]F spotlight_titlef ml-2f leading-tight uppercase text-center tracking-[.5rem]">
-              Spotlight
-            </div>
+          <div className="-mt-[2.5rem] poppins text-4xl font-bold tracking-[1rem] uppercase text-white drop-shadow ">
+            {genreName}
           </div>
-          <div className="-mt-[2.5rem] mb-7">
-            <div className=" poppins text-3xl text-[2.25rem]F leading-tight uppercase text-center tracking-[.5rem] text-[#FFF200]">
-              Spotlight
-            </div>
-          </div> */}
           <input {...getInputProps()} />
         </div>
       </div>

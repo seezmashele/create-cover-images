@@ -122,39 +122,39 @@ function Home() {
           {...getRootProps()}
           style={{ backgroundImage: `url(${uploadedImage})` }}
           id="custom-image-container"
-          className="cursor-pointer bg-center bg-cover w-[520px] h-[390px] flex-shrink-0 flex-col overflow-hidden flex items-center"
+          className="cursor-pointer bg-center bg-cover w-[480px] h-[360px] flex-shrink-0 flex-col overflow-hidden flex items-center"
         >
-          <div className="h-56 title_stroke mt-16 ml-2 w-full">
-            <div className="poppins w-full text-6xl drop-shadow-sm text-center font-bold tracking-widest uppercase">
+          <div className="h-56 title_stroke mt-12 ml-2F w-full">
+            <div className="poppins w-full text-[3.45rem] text-center font-bold tracking-widest uppercase">
               Playlist
             </div>
-            <div className="poppins mt-3 text-center text-8xl font-bold tracking-widest uppercase">
+            <div className="poppins text-center text-[5.75rem] font-bold tracking-widest uppercase">
               #{playlistNumber}
             </div>
           </div>
           <div className="h-56 title_stroke -mt-[14.3rem] w-full">
-            <div className="poppins w-full playlist_title text-6xl drop-shadow-sm text-center font-bold tracking-widest uppercase">
+            <div className="poppins w-full playlist_title text-[3.45rem] text-center font-bold tracking-widest uppercase">
               Playlist
             </div>
-            <div className="playlist_title title_strokeF poppins mt-3 drop-shadow-sm text-center text-8xl font-bold tracking-widest uppercase">
+            <div className="playlist_title title_strokeF poppins text-center text-[5.75rem] font-bold tracking-widest uppercase">
               #{playlistNumber}
             </div>
           </div>
           <div className="h-56 -mt-56 w-full z-40">
-            <div className="poppins w-full text-6xl text-center font-bold tracking-widest uppercase text-white">
+            <div className="poppins w-full text-[3.45rem] text-center font-bold tracking-widest uppercase text-white">
               Playlist
             </div>
-            <div className="poppins mt-3 text-center text-8xl font-bold tracking-widest uppercase text-white">
+            <div className="poppins text-center text-[5.75rem] font-bold tracking-widest uppercase text-white">
               #{playlistNumber}
             </div>
           </div>
-          <div className="playlist_title title_stroke poppins text-4xl font-bold tracking-[1rem] ml-1.5 uppercase">
+          <div className="playlist_title title_stroke poppins text-[2rem] font-bold tracking-[1rem] ml-1.5F uppercase">
             {genreName}
           </div>
-          <div className="title_stroke -mt-[2.75rem] ml poppins text-4xl font-bold tracking-[1rem] uppercase text-white drop-shadow ">
+          <div className="title_stroke -mt-[2.75rem] ml poppins text-[2rem] font-bold tracking-[1rem] uppercase">
             {genreName}
           </div>
-          <div className="-mt-[2.5rem] poppins text-4xl font-bold tracking-[1rem] uppercase text-white drop-shadow ">
+          <div className="-mt-[3.25rem] poppins text-[2rem] font-bold tracking-[1rem] uppercase text-white ">
             {genreName}
           </div>
           <input {...getInputProps()} />
