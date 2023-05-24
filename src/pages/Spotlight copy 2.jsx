@@ -115,25 +115,20 @@ function Home() {
           id="custom-image-container"
           className="cursor-pointer bg-top bg-cover  w-[480px] h-[360px] flex-col flex-shrink-0 overflow-hidden flex items-center justify-end"
         >
-          <div className="h-60 flex justify-end items-end  px-5">
-            <div className="uppercase poppins title_stroke poppins_boldF poppins  text-5xlf text-[2.75rem] spotlight_titlef ml-2f leading-tight text-center tracking-widest">
+          <div className="">
+            <div className="poppins title_stroke poppins_bold  text-5xlf text-[2.75rem] spotlight_titlef ml-2f leading-tight text-center tracking-widest">
               {artistName}
             </div>
           </div>
-          <div className="h-60 -mt-[15.3rem] flex justify-end items-end  px-5">
-            <div className="uppercase poppins ml-3F title_stroke poppins_boldF poppins  text-5xlf text-[2.75rem] spotlight_titlef ml-2f leading-tight text-center tracking-widest">
+          <div className="px-5 -translate-y-full">
+            <div className=" poppins_bold text-[2.75rem] leading-tight text-center tracking-widest text-white">
               {artistName}
             </div>
           </div>
-          <div className="h-60 flex justify-end items-end -mt-60 px-5 -translate-y-fullF">
-            <div className="uppercase  poppins_boldF poppins text-[2.75rem] leading-tight text-center tracking-widest text-white">
-              {artistName}
-            </div>
-          </div>
-          <div className="mt-8 bg-black rounded-t-sm w-fullF text-center py-3 px-4 poppins_bold text-xl font-boldF tracking-[.5rem] uppercase text-white ">
+          {/* <div className="mt-10 bg-black rounded-t-sm w-fullF text-center py-3 px-4 poppins_bold text-xl font-boldF tracking-[.5rem] uppercase text-white ">
             Spotlight
-          </div>
-          {/* <div className="">
+          </div> */}
+          <div className="">
             <div className="poppins title_stroke poppins_bold  text-3xl text-[2.25rem]F spotlight_titlef ml-2f leading-tight uppercase text-center tracking-[.5rem]">
               Spotlight
             </div>
@@ -147,7 +142,7 @@ function Home() {
             <div className=" poppins_bold text-3xl text-[2.25rem]F leading-tight uppercase text-center tracking-[.5rem] text-[#FFF200]">
               Spotlight
             </div>
-          </div> */}
+          </div>
           <input {...getInputProps()} />
         </div>
       </div>
