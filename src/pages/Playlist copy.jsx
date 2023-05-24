@@ -124,27 +124,11 @@ function Home() {
           id="custom-image-container"
           className="cursor-pointer bg-center bg-cover w-[520px] h-[390px] flex-shrink-0 flex-col overflow-hidden flex items-center"
         >
-          <div className="h-56 title_stroke mt-16 ml-2 w-full">
-            <div className="poppins w-full playlist_titleF title_strokeF text-6xl drop-shadow-sm text-center font-bold tracking-widest uppercase">
+          <div className="h-56 mt-16">
+            <div className="poppins playlist_title text-6xl drop-shadow-sm text-center font-bold tracking-widest uppercase text-white">
               Playlist
             </div>
-            <div className=" title_strokeF poppins mt-3 drop-shadow-sm text-center text-8xl font-bold tracking-widest uppercase">
-              #{playlistNumber}
-            </div>
-          </div>
-          <div className="h-56 title_stroke -mt-[14.3rem] w-full">
-            <div className="poppins w-full playlist_title title_strokeF text-6xl drop-shadow-sm text-center font-bold tracking-widest uppercase">
-              Playlist
-            </div>
-            <div className="playlist_title title_strokeF poppins mt-3 drop-shadow-sm text-center text-8xl font-bold tracking-widest uppercase">
-              #{playlistNumber}
-            </div>
-          </div>
-          <div className="h-56 -mt-56 w-full z-40">
-            <div className="poppins w-full text-6xl text-center font-bold tracking-widest uppercase text-white">
-              Playlist
-            </div>
-            <div className="poppins mt-3 text-center text-8xl font-bold tracking-widest uppercase text-white">
+            <div className="playlist_title poppins mt-3 drop-shadow-sm text-center text-8xl font-bold tracking-widest uppercase text-white">
               #{playlistNumber}
             </div>
           </div>

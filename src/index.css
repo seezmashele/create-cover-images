@@ -7,8 +7,17 @@
   src: url("./fonts/Poppins-ExtraBold.ttf");
 }
 
+@font-face {
+  font-family: PoppinsBold;
+  src: url("./fonts/Poppins-Bold.ttf");
+}
+
 .poppins {
   font-family: PoppinsExtraBold, sans-serif;
+}
+
+.poppins_bold {
+  font-family: PoppinsBold, sans-serif;
 }
 
 .hit-the-floor {
@@ -22,9 +31,10 @@
 .spotlight_title {
   color: #fff;
   text-shadow: 0 1px 0 #888, 0 6px 1px rgba(0, 0, 0, 0.1),
-    0 0 5px rgba(0, 0, 0, 0.1), 0 1px 50px rgba(0, 0, 0, 0.7),
-    0 3px 0px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.5),
-    0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.3);
+    0 0 5px rgba(0, 0, 0, 0.1), 0 1px 60px rgba(0, 0, 0, 0.7),
+    0 3px 0px rgba(0, 0, 0, 0.2), 0 5px 20px rgba(0, 0, 0, 0.5),
+    0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 30px rgba(0, 0, 0, 0.3),
+    2px 3px 5px #00000055;
 }
 
 .playlist_title_2 {
@@ -36,9 +46,22 @@
 }
 
 .playlist_title {
-  color: #fff;
   text-shadow: 0 1px 0 #888, 0 6px 1px rgba(0, 0, 0, 0.1),
     0 0 5px rgba(0, 0, 0, 0.1), 0 1px 50px rgba(0, 0, 0, 0.7),
     0 3px 0px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.5),
     0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* .outlined_shadow {
+  -webkit-text-stroke: 4px black;
+  text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000,
+    3px 3px 0 #000, 0 2px 2px #f00, 6px 6px 0 #000;
+} */
+
+.album_shadow {
+  box-shadow: 0 6px 80px -40px #000;
+}
+
+.title_stroke {
+  -webkit-text-stroke: 5px black;
 }

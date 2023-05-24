@@ -119,12 +119,12 @@ function Home() {
         <div
           {...getRootProps()}
           id="custom-image-container"
-          className="cursor-pointer w-[520px] h-[390px] overflow-hidden bg-opacity-10 bg-neutral-100 flex items-center justify-center"
+          className="cursor-pointer w-[480px] h-[360px] overflow-hidden bg-opacity-10 bg-neutral-100 flex items-center justify-center"
         >
           <div className="w-full h-full flex items-center justify-center bg-neutral-100 bg-opacity-30">
             <div
-              className="w-[390px] h-[390px]
-             flex-shrink-0 overflow-hidden"
+              className="w-[360px] h-[360px]
+             flex-shrink-0 overflow-hidden roundedF  shadowF album_shadowF"
             >
               <img
                 draggable="false"
