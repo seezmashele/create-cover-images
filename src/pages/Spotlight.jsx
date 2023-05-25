@@ -130,24 +130,9 @@ function Home() {
               {artistName}
             </div>
           </div>
-          <div className="mt-5 mb-5 bg-black rounded-t-sm w-fullF text-center py-2 pr-3 poppins_bold text-xl font-boldF tracking-[.5rem] pl-5 uppercase text-white ">
+          <div className="mt-5 mb-5 border-2 border-white roundedF w-fullF text-center pt-1.5 pb-1 pr-2 poppins_bold text-[1.2rem] tracking-[.45rem] pl-4 uppercase text-white ">
             Spotlight
           </div>
-          {/* <div className="mt-6">
-            <div className="poppins title_stroke poppins  text-3xl text-[2.25rem]F spotlight_titlef ml-2f leading-tight uppercase text-center tracking-[.5rem]">
-              Spotlight
-            </div>
-          </div>
-          <div className="-mt-[2.45rem]">
-            <div className="poppins title_stroke poppins  text-3xl text-[2.25rem]F spotlight_titlef ml-2f leading-tight uppercase text-center tracking-[.5rem]">
-              Spotlight
-            </div>
-          </div>
-          <div className="-mt-[2.5rem] mb-7">
-            <div className=" poppins text-3xl text-[2.25rem]F leading-tight uppercase text-center tracking-[.5rem] text-[#FFF200]">
-              Spotlight
-            </div>
-          </div> */}
           <input {...getInputProps()} />
         </div>
       </div>
